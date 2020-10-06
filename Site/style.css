@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&family=Nunito+Sans&display=swap');
+
+body {
+    font-family: Nunito Sans;
+    font-size: 16px;
+    line-height: 1.5;
+
+    background-color: 2C2525;
+    color: #ffffff;
+    margin: 80px auto 50px auto;
+    width: 1128px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1, nav, footer {
+    font-family: Josefin Sans;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h2 {
+    font-family: Josefin Sans;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.2px;
+    margin: 10px 0 20px 0;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 0 0 32px;
+    transition: color 0.3s;
+}
+
+a:hover, a.selected {
+    color: #E0A4BA;
+    
+}
+
+section {
+    margin: 80 0 80 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px 32px;
+    grid-auto-flow: dense;
+}
+
+section h1 {
+    grid-column: 2 / span 10;
+    text-align: center;
+}
+
+section.project div.artwork {
+    grid-column: 1 / span 8;
+    text-align: center;
+    
+
+}
+
+section.project div.description {
+    grid-column: 9 / span 4;
+    
+}
+
+
+section.project img {
+    max-height: 450px;
+}
+
+section.project-alt div.artwork {
+    grid-column: 5 / span 8;
+    text-align: center;
+    
+
+}
+
+section.project-alt div.description {
+    grid-column: 1 / span 4;
+    
+}
+
+section.about img {
+    max-height: 700px;
+    
+}
+
+section.about div.photo {
+    grid-column: 1 / span 6;
+}
+
+section.about div.description {
+    grid-column: 7 / span 6;
+   
+}
+
+section.about h1 {
+    margin: 0 0 0 0;
+    text-align: left;
+    
+}
+
+section.about p {
+    margin: 16px 0 16px 0;
+
+}
+
+section.contact div.contact-title {
+    grid-column: 4 / span 6;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    margin: 0 16 0 16;
+}
